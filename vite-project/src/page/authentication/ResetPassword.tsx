@@ -4,7 +4,6 @@ import { FaEye } from 'react-icons/fa';
 import { FaEyeSlash } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import usePasswordVisibility from 'hooks/UsePasswordVisibility';
-import EMPLogo from '@assets/images/emp-logo-name.webp';
 import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import { DisplayFormErrorMessages } from 'components/DisplayFormErrors';
@@ -140,7 +139,6 @@ const ResetPassword = () => {
 
   return (
     <>
-      <img className="emp-logo-auth" src={EMPLogo} alt="emp" />
       <div className="form-input-container">
         <h1 className="text-center text-2xl text-[#1F3A78] font-bold">
           Reset Password?

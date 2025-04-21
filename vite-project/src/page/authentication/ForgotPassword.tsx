@@ -1,7 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { toast } from 'sonner';
-import EMPLogo from '@assets/images/emp-logo-name.webp';
 import { useRef } from 'react';
 import { userForgotPassword } from './Api/post';
 import { useNavigate } from 'react-router-dom';
@@ -53,7 +52,6 @@ const ForgotPassword = () => {
         onClick={() => navigate('/admin/login')}>
         <ArrowLeft className="w-7 h-7 hover:bg-black/10 duration-300 ease-linear p-1 rounded-full hover:-translate-x-1 cursor-pointer" />
       </div>
-      <img className="emp-logo-auth" src={EMPLogo} alt="emp" />
       <div className="form-input-container">
         <h1 className="text-center text-xl 2xl:text-2xl text-[#1F3A78] font-bold">
           Forgot Password ?

@@ -3,7 +3,6 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { Input } from '@/components/ui/input';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import usePasswordVisibility from 'hooks/UsePasswordVisibility';
-import EMPLogo from '@assets/images/emp-logo-name.webp';
 import { Link, useNavigate } from 'react-router-dom';
 import { emailSchema, passwordSchema } from 'schema/Login';
 import { useEffect, useRef, useState } from 'react';
@@ -194,7 +193,6 @@ const Login = () => {
 
   return (
     <>
-      <img className="emp-logo-auth" src={EMPLogo} alt="emp" />
       <div className="form-input-container">
         <h1 className="text-center text-xl 2xl:text-2xl text-[#1F3A78] font-bold">
           Welcome!
