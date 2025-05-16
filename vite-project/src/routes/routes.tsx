@@ -17,15 +17,14 @@ import Attendance from 'page/user/Attendance';
 
 import Dashboard from 'page/user/Dashboard';
 
-import Task from 'page/user/Task';
+
 
 import AttendanceComp from 'components/AttendanceModule/AttendancePage';
 import Holiday from 'components/AttendanceModule/HolidayPage';
 
 import Settings from 'components/AttendanceModule/SettingsPage';
 
-import Tasks from 'page/user/Tasks';
-import StageTasks from 'page/user/StageTasks';
+
 
 export const routes = createBrowserRouter(
   createRoutesFromElements(
@@ -59,10 +58,7 @@ export const routes = createBrowserRouter(
             <Route path="settings" element={<Settings />} />
           </Route>
   
-          <Route path="task" element={<Tasks />}>
-            <Route path="" element={<Task />} />
-            <Route path="stagetasks" element={<StageTasks />} />
-          </Route>
+        
       
         </Route>
       </Route>
